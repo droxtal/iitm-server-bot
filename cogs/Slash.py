@@ -19,12 +19,27 @@ class Slash(commands.Cog):
         Displays list of commands and their usage
         """
         if command=='help':
-            output=discord.Embed(title="Help",description="Displays list of commands and their usage",color=0x00ff00)
+            output=discord.Embed(
+                title="Help",
+                description="Displays list of commands and their usage",
+                color=0x00ff00)
         elif not command:
             output=discord.Embed(
                 title="Help",
-                description="""Displays list of commands and their usage
-                Help: Displays list of commands and their usage""",
+                description="""Hi 👋 I am ServerBot.
+                Right now I can't do much. Seriously, your pet can do more tricks than me.
+                If you have any ideas or feature suggestion for me please put them in #server-suggestions. My devlopers would love to have your suggestions.
+                If you yourself want to teach me new tricks head over to https://github.com/droxtal/iitm-server-bot
+                
+                Here's a quick guide to use the /help command
+                1. Type '/help' (without quotes)
+                2. Hit space
+                3. Type a command name that you want to know more about. You can refer the list of bot's slash commands that discord provides.
+                
+                Syntax: /help <some command>
+                
+                
+                """,
                 color=0x00ff00)
         else:
             output=discord.Embed(title="Error",description="Command not found",color=0xff0000)
