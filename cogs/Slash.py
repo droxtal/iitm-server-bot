@@ -23,6 +23,20 @@ class Slash(commands.Cog):
                 title="Help",
                 description="Displays list of commands and their usage",
                 color=0x00ff00)
+        elif command == 'aboutme':
+             output=discord.Embed(
+                title="About Me",
+                description="""Hi 👋 I am ServerBot. 
+                I am here to help members and an do some fun things.
+                
+                Right now I can't do much. Seriously, your pet can do more tricks than me.
+                Do you have any tricks/skills/features that you want me to have? If yes, head over to #server-suggestions. My devlopers would love to have your suggestions.
+                
+                If you want to and can teach me new tricks head over to https://github.com/sinsniwal/iitm-server-bot
+                
+                
+                """,
+                color=0x00ff00)
         elif not command:
             output=discord.Embed(
                 title="Help",
